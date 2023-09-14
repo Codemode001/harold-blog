@@ -14,22 +14,22 @@ const BlogList = () => {
             style={{
               flexDirection: "column",
               alignItems: "center",
-              height: "75%",
+              maxHeight: "75%",
             }}
           >
             <h1>Latest Blog</h1>
-            <BlogCards type="primary" />
+            <BlogCards type="primary" blogId={1} />
           </div>
           <div className="flex justify-center h-[25%]">
             <div className="flex justify-between w-[90%]">
               <div>
-                <BlogCards type="secondary" />
+                <BlogCards type="secondary" blogId={0} />
               </div>
               <div>
-                <BlogCards type="secondary" />
+                <BlogCards type="secondary" blogId={0} />
               </div>
               <div>
-                <BlogCards type="secondary" />
+                <BlogCards type="secondary" blogId={0} />
               </div>
             </div>
           </div>
@@ -44,9 +44,9 @@ const BlogList = () => {
               gap: "1rem",
             }}
           >
-            <BlogCards type="archive" />
-            <BlogCards type="archive" />
-            <BlogCards type="archive" />
+            <BlogCards type="archive" blogId={0} />
+            <BlogCards type="archive" blogId={0} />
+            <BlogCards type="archive" blogId={0} />
           </div>
         </AllBlogs>
       </Container>
@@ -86,7 +86,7 @@ const Container = styled.div`
 `;
 
 const Main = styled.div`
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
 `;

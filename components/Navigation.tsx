@@ -29,15 +29,27 @@ const Navigation = () => {
       </div>
       <div className="flex  justify-center">
         <div className="flex" style={{ gap: "1rem", color: "#663eff" }}>
-          <div className="cursor-pointer">
+          <a
+            className="cursor-pointer"
+            href="https://www.facebook.com/harold.pisos.9/"
+            target="_blank"
+          >
             <FacebookIcon />
-          </div>
-          <div className="cursor-pointer">
+          </a>
+          <a
+            className="cursor-pointer"
+            href="https://www.instagram.com/haroldpisos/"
+            target="_blank"
+          >
             <InstagramIcon />
-          </div>
-          <div className="cursor-pointer">
+          </a>
+          <a
+            className="cursor-pointer"
+            href="https://github.com/Codemode001"
+            target="_blank"
+          >
             <GitHubIcon />
-          </div>
+          </a>
           <div className="cursor-pointer">
             <LinkedInIcon />
           </div>
