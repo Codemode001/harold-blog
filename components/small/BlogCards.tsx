@@ -35,7 +35,7 @@ const BlogCards = ({ type, blogId }: { type: string; blogId: number }) => {
   `;
 
   const redirectToBlog = () => {
-    router.push(`/blog/${blogId}`);
+    router.push(`/Blog/${blogId}`);
   };
 
   const sampleTitle = data[blogId].title;
