@@ -9,11 +9,25 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const Navigation = () => {
   return (
     <Main>
-      <div className="flex w-[30%] justify-between">
+      <div className="flex w-[45%] justify-between items-center h-[50%]">
         <h1>
           <span style={{ color: "#18a9fc" }}>{"<"}</span> The Harold Blog{" "}
           <span style={{ color: "#18a9fc" }}>{"/ >"}</span>
         </h1>
+
+        <KnowMeMore href="https://haroldcreative.netlify.app/" target="_blank">
+          Know me more
+        </KnowMeMore>
+
+        <ViewCode
+          href="https://github.com/Codemode001/harold-blog"
+          target="_blank"
+          className="cursor-pointer"
+        >
+          View Source Code
+        </ViewCode>
+      </div>
+      <div className="flex  justify-center">
         <div className="flex" style={{ gap: "1rem", color: "#663eff" }}>
           <div className="cursor-pointer">
             <FacebookIcon />
@@ -29,22 +43,32 @@ const Navigation = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-[20%] justify-center">
-        <KnowMeMore>Know me more</KnowMeMore>
-      </div>
     </Main>
   );
 };
 
 export default Navigation;
 
-const KnowMeMore = styled.button`
+const ViewCode = styled.a`
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s ease;
+
+  &:hover {
+    border-bottom: 1px solid #f5df68;
+  }
+`;
+
+const KnowMeMore = styled.a`
   background-color: #18a9fc;
-  width: 60%;
-  height: 2.5rem;
+  width: 25%;
+  height: 80%;
   border-radius: 2rem;
   color: white;
   transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 
   &:hover {
     transform: scale(1.1);

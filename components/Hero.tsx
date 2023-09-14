@@ -6,7 +6,7 @@ import styled from "styled-components";
 const Hero = () => {
   return (
     <Main>
-      <Image src="https://res.cloudinary.com/dhhamkkue/image/upload/v1694616417/Me/Technology-Pisos_Harold_Rhey-Information_Technology_Lead_o4qtif.png" />
+      <Image src="https://res.cloudinary.com/dhhamkkue/image/upload/v1694660823/Me/Technology-Pisos__Harold_Rhey-Information_Technology_Lead-removebg-preview_skjgjc.png" />
       <div style={{ width: "50%", textAlign: "center" }}>
         <h1>
           Unleash Your <span style={{ color: "#F5DF68" }}>POTENTIAL</span>
