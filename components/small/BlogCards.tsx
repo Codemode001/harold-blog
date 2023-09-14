@@ -1,9 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import { useRouter } from "next/navigation";
 
 import data from "../../data/data.json";
 
 const BlogCards = ({ type, blogId }: { type: string; blogId: number }) => {
+  const router = useRouter();
+
   const Main = styled.div`
     width: ${type === "secondary"
       ? "17rem"
@@ -31,12 +34,16 @@ const BlogCards = ({ type, blogId }: { type: string; blogId: number }) => {
     }
   `;
 
+  const redirectToBlog = () => {
+    router.push(`/blog/${blogId}`);
+  };
+
   const sampleTitle = data[blogId].title;
   const overview = data[blogId].overview;
   const imageLink = data[blogId].image;
 
   return (
-    <Main>
+    <Main onClick={redirectToBlog}>
       <Image src={imageLink} />
       <OverviewContainer>
         <div
@@ -70,7 +77,10 @@ const OverviewContainer = styled.div`
   justify-content: center;
 `;
 
-const Overview = styled.div``;
+const Overview = styled.div`
+  font-family: italic;
+  letter-spacing: 2px;
+`;
 
 const BlogTitle = styled.h1``;
 
