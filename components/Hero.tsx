@@ -39,7 +39,7 @@ const Image = styled.img`
 `;
 
 const Main = styled.div`
-  height: 30rem;
+  height: 40rem;
   display: flex;
   padding: 0 3rem;
   display: flex;
