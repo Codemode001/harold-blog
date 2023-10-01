@@ -18,12 +18,12 @@ const BlogList = () => {
             }}
           >
             <h1>Latest Blog</h1>
-            <BlogCards type="primary" blogId={1} />
+            <BlogCards type="primary" blogId={2} />
           </div>
           <div className="flex justify-center h-[25%]">
             <div className="flex justify-between w-[90%]">
               <div>
-                <BlogCards type="secondary" blogId={2} />
+                <BlogCards type="secondary" blogId={1} />
               </div>
               <div>
                 <BlogCards type="secondary" blogId={0} />
