@@ -23,7 +23,7 @@ const BlogList = () => {
           <div className="flex justify-center h-[25%]">
             <div className="flex justify-between w-[90%]">
               <div>
-                <BlogCards type="secondary" blogId={0} />
+                <BlogCards type="secondary" blogId={2} />
               </div>
               <div>
                 <BlogCards type="secondary" blogId={0} />
