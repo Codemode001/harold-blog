@@ -35,9 +35,9 @@ const Blog = () => {
         </div>
         <Image src={imagesrc} />
         <div>
-          <Content>{content1}</Content>
-          <Content>{content2}</Content>
-          <Content>{content3}</Content>
+          <Content style={{ whiteSpace: "pre-line" }}>{content1}</Content>
+          <Content style={{ whiteSpace: "pre-line" }}>{content2}</Content>
+          <Content style={{ whiteSpace: "pre-line" }}>{content3}</Content>
         </div>
         <div style={{ margin: "3rem 0 1rem 0" }}>
           <Divider />
