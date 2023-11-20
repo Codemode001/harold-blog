@@ -18,7 +18,7 @@ const BlogList = () => {
             }}
           >
             <h1>Latest Blog</h1>
-            <BlogCards type="primary" blogId={4} />
+            <BlogCards type="primary" blogId={3} />
           </div>
           <div className="flex justify-center h-[25%]">
             <div className="flex justify-between w-[90%]">
